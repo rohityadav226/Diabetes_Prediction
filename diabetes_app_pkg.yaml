@@ -1,0 +1,25 @@
+---
+version: "3"
+services:
+  diabetes_app:
+    image: 836392203381.dkr.ecr.us-east-2.amazonaws.com/diabetes_web_app
+    ports:
+      - 8501:8501
+  mysqldb:
+    image: mysql
+    ports:
+      - 3036:3036
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - mysql-data:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8081:80
+    environment:
+      - PMA_HOST=mysqldb
+volumes:
+  mysql-data:
+    driver: local
+

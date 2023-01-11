@@ -76,10 +76,11 @@ def predict_diabetes(Gender, Age, Height, Weight, Waist, Hip, Glucose, Cholester
         
     """
     db = mysql.connector.connect(
-    host='localhost',
+    host='mysqldb',
     user='root',
     passwd='password',
-    database='diabetes_data')
+    database='diabetes_data',
+    auth_plugin='mysql_native_password')
     mycursor=db.cursor()
     sql = "INSERT INTO patient_data(Gender, Age, Height, Weight, Waist, Hip, Glucose, Cholesterol, HDL_Cholesterol, Systolic_BP, Diastolic_BP) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
     mycursor.execute(sql, (Gender, Age, Height, Weight, Waist, Hip, Glucose, Cholesterol, HDLChol, SystolicBP, DiastolicBP))

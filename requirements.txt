@@ -1,5 +1,5 @@
 numpy
-pickle5
+pickle
 pandas
 streamlit 
 mysql.connector

@@ -19,6 +19,8 @@ Build an image from Docker File.
  - Create a private repository using AWS ECR.
  - Push the image into your private repository.
  - Change the image link in **diabetes_app_pkg.yaml** to your image link.
+ <img width="644" alt="Screenshot 2023-01-12 at 10 54 46 AM" src="https://user-images.githubusercontent.com/90460563/212134972-32b4ccd7-1980-4e84-a381-edceaa4294d5.png">
+
 
 Run below command to start your containers using .yaml file.<br>
 

@@ -100,6 +100,11 @@ def predict_diabetes(Gender, Age, Height, Weight, Waist, Hip, Glucose, Cholester
     return 'As per the model prediction you might have diabetes. Please consult with your doctor'
 	
 def main():
+    no_sidebar_style = """
+    <style>
+        div[data-testid="stSidebarNav"] {display: none;}
+    </style>"""
+    st.markdown(no_sidebar_style, unsafe_allow_html=True)
     #st.title("Diabetes Prediction Using ML")
     html_temp = """
     <div style="background-color:tomato;padding:10px">

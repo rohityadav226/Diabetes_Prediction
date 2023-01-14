@@ -1,7 +1,7 @@
 # Diabetes Prediction Using Machine Learning - Docker APP
 
 This project pertains to the healthcare industry since we will make use of real patient data to manipulate and predict diabetes (yes or no) based on demographics and lab results. We will be creating multiple machine learning models and will be testing them on validation data. Furthermore, we will integrated the best performing model into a web app and connecting it with mysql Database. We will be using Docker Containers for integration.
-[WebAppLink](http://3.140.247.108:8501)
+[WebAppLink](http://3.99.163.110:8501/)
 # Files
 [Dockerfile](https://github.com/rohityadav226/Diabetes_Prediction/blob/master/Dockerfile "Dockerfile")<br>
 [classifier.pkl](https://github.com/rohityadav226/Diabetes_Prediction/blob/master/classifier.pkl "classifier.pkl")<br>
